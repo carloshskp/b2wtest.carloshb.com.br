@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-class Label extends Component
-{
-    render()
-    {
-        return <span className="label">
-            <strong>{ this.props.title }</strong>: { this.props.children }
-        </span>;
-    }
-}
+const Label = ({ title, children }) => <span className="label">
+    <strong>{ title }</strong>: { children }
+</span>;
+
+Label.propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.any.isRequired
+};
 
 export default Label;
