@@ -1,9 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import renderer from "react-test-renderer";
+
 import Label from './Label';
 
-it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<Label />, div);
-    ReactDOM.unmountComponentAtNode(div);
+it('renders Label component', () => {
+    const box = renderer.create(
+        <Label
+            title='Population'
+        >
+            100000
+        </Label>
+    );
+
+    let tree = box.toJSON();
+
+    expect(tree).toMatchSnapshot();
 });
