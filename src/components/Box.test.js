@@ -1,9 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
+
 import Box from './Box';
 
-it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<Box />, div);
-    ReactDOM.unmountComponentAtNode(div);
+it('renders Box component', () => {
+    const box = renderer.create(
+        <Box
+            planet='PLANET NAME'
+            population={200000}
+            climate='ARID'
+            terrain='DESERT'
+            featured={2}
+        />
+    );
+
+    let tree = box.toJSON();
+
+    expect(tree).toMatchSnapshot();
 });
