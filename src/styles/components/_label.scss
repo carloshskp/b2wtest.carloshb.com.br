@@ -1,0 +1,8 @@
+.label {
+    display: block;
+    font-size: 1em;
+    > strong {
+        font-family: 'Gameplay', sans-serif;
+        text-transform: lowercase;
+    }
+}

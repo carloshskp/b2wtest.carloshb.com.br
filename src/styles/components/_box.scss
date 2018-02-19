@@ -1,0 +1,60 @@
+@import "../mixins";
+@import "../vars";
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 300px;
+    height: 250px;
+
+    background: white;
+
+    @include boxSizing();
+    
+    &.red {
+        @include boxTheme($red);
+    }
+    &.blue {
+        @include boxTheme($blue);
+    }
+    &.green {
+        @include boxTheme($green);
+    }
+    &.yellow {
+        @include boxTheme($yellow);
+    }
+    &.purple {
+        @include boxTheme($purple);
+    }
+
+    > header, > .content, > footer {
+        width: 100%;
+    }
+
+    > header {
+        > h1 {
+            padding: 10px;
+
+            text-align: center;
+
+            font-family: 'Gameplay', sans-serif;
+            font-size: 1.2em;
+
+            border-bottom: 1px solid;
+        }
+    }
+
+    > .content {
+        padding: 20px;
+        min-height: 100px;
+    }
+
+    > footer {
+        align-self: flex-end;
+        text-align: right;
+        padding: 20px;
+        @include boxSizing();
+    }
+}
