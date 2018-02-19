@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Box component 1`] = `
+<section
+  className="box undefined"
+>
+  <header>
+    <h1>
+      PLANET NAME
+    </h1>
+  </header>
+  <div
+    className="content"
+  >
+    <span
+      className="label"
+    >
+      <strong>
+        POPULATION
+      </strong>
+      : 
+      200000
+    </span>
+    <span
+      className="label"
+    >
+      <strong>
+        CLIMATE
+      </strong>
+      : 
+      ARID
+    </span>
+    <span
+      className="label"
+    >
+      <strong>
+        TERRAIN
+      </strong>
+      : 
+      DESERT
+    </span>
+  </div>
+  <footer>
+    Featured in 
+    2
+     films.
+  </footer>
+</section>
+`;
