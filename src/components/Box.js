@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Label from './Label';
 
-const Box = ({ planet, population, climate, terrain, featured }) => <section className="box">
+const Box = ({ planet, population, climate, terrain, featured, color }) => <section className={`box ${color}`}>
     <header>
         <h1>{ planet }</h1>
     </header>
@@ -23,6 +23,7 @@ Box.propTypes = {
     climate: PropTypes.string.isRequired,
     terrain: PropTypes.string.isRequired,
     featured: PropTypes.number.isRequired,
+    color: PropTypes.string
 };
 
 export default Box;
