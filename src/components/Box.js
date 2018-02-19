@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import PropTypes from 'prop-types';
 
 import Label from './Label';
@@ -19,7 +19,7 @@ const Box = ({ planet, population, climate, terrain, featured }) => <section cla
 
 Box.propTypes = {
     planet: PropTypes.string.isRequired,
-    population: PropTypes.number.isRequired,
+    population: PropTypes.string.isRequired,
     climate: PropTypes.string.isRequired,
     terrain: PropTypes.string.isRequired,
     featured: PropTypes.number.isRequired,
