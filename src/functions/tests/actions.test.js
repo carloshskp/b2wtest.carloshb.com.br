@@ -5,7 +5,7 @@ import {
     restartPlanets,
     savePlanets,
     selectPlanet
-} from './actions';
+} from '../actions';
 
 it('PLANETS_LOADED action', () => {
     let tree = planetsLoaded();

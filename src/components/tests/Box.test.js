@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Box from './Box';
+import Box from '../Box';
 
 it('renders Box component', () => {
     const box = renderer.create(

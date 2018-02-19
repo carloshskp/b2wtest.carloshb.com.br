@@ -1,5 +1,5 @@
-import responseSample from '../responseSample';
-import {planetMutator, planetsMutator} from './planetsMutator';
+import responseSample from '../../responseSample';
+import {planetMutator, planetsMutator} from '../planetsMutator';
 
 const expected = {
     name: responseSample.results[0].name,

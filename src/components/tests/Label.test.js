@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from "react-test-renderer";
 
-import Label from './Label';
+import Label from '../Label';
 
 it('renders Label component', () => {
     const box = renderer.create(

@@ -1,7 +1,7 @@
-import {getPlanet, getRandomPlanetIndex, removePlanetByIndex} from "./planets";
-import {planetsMutator} from "./planetsMutator";
-import responseSample from "../responseSample";
-import store from "../store";
+import {getPlanet, getRandomPlanetIndex, removePlanetByIndex} from "../planets";
+import {planetsMutator} from "../planetsMutator";
+import responseSample from "../../responseSample";
+import store from "../../store";
 
 const planets = [
     {
